@@ -1,0 +1,7 @@
+export const GET_HOTTEST_NEWS = 'GET_HOTTEST_NEWS';
+
+export const GET_LATEST_NEWS = 'GET_LATEST_NEWS';
+
+export const GET_CHAMPIONS = 'GET_CHAMPIONS';
+
+export const GET_SCHEDULES = 'GET_SCHEDULES';

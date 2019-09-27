@@ -1,0 +1,130 @@
+.champion-body {
+	background: url('/styles/imgs/champion-background.png') no-repeat;
+	background-position: 100% 100%;
+	background-size: 100% 100%;
+	width: 100%;
+}
+
+.single-player {
+    width: 100%;
+    position: relative;
+
+    &.active:after {
+        top: 100%;
+        left: 50%;
+        border: solid transparent;
+        content: " ";
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(243, 129, 18, 0);
+        border-top-color: black;
+        border-width: 25px;
+        margin-left: -25px;
+        z-index: 10;
+
+    }
+}
+
+.player-avatar {
+	width: 100%;
+    height: auto;
+}
+
+.player-status {
+	position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: .25s;
+    background: linear-gradient(to top,rgba(0,0,0,.6) 0,rgba(0,0,0,0.6) 100%);
+    padding: 5px;
+    font-size: 14px;
+    color: white;
+
+    .name {
+        padding: 15px 25px;
+        font-size: 2em;
+        font-weight: 600;
+    }
+
+    .status {
+        font-size: 16px;
+        padding: 0px 15px 10px 25px;
+    }
+}
+
+.champion-title-wrapper {
+    padding: 100px 0px;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.champion-description {
+    margin: 0 15px;
+    width: 100%;
+    border: 1px solid #eee;
+    background: white;
+    padding: 0px 20px;
+    position: relative;
+    height: 0px;
+    visibility: hidden;
+    display: block;
+    transition: 0.3 s;
+
+    &.active {
+        height: 250px;
+        visibility: visible;
+        transition: 0;
+    }
+
+    &.inactive {
+        display: none;
+    }
+
+    h1 {
+        color: #260d47;
+        font-weight: 700;
+
+    }
+
+    hr {
+        background: black;
+    }
+
+    .status {
+        line-height: 30px;
+        flex: 1;
+        font-size: 24px;
+    }
+
+    .description {
+        padding: 0 !important;
+    }
+
+    .fa {
+        color: #260d47;
+
+        &:before {
+            font-size: 24px;
+        };
+    }
+}
+
+.champion-description::first {
+    display: block;
+}
+
+.description-element {
+    padding: 0 !important;
+
+    div {
+        padding: 5px 0;
+    }
+
+    .label-text {
+        margin-right: 15px;
+    }
+}

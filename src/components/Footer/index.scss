@@ -1,0 +1,53 @@
+@import '../styles/constant.scss';
+
+.footer-panel {
+	background-color: $light-black;
+	width: 100%;
+	padding: 25px 0;
+
+	a {
+		color: $footer-text-color;
+		font-size: 1rem;
+		font-weight: 600;
+	}
+
+	a:hover {
+		color: white !important;
+	};
+
+	.download-detail {
+		position: absolute;
+	    top: auto;
+	    bottom: 2em;
+	    left: auto;
+	    right: 0;
+	    text-align: center;
+	}
+	
+	.img-group {
+		width: 50%;
+	    margin: 0 auto;
+	    text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+
+        .footer-image-wrapper {
+        	display: flex;
+    	    justify-content: center;
+    	    text-align: center;
+    	    margin: auto;
+        }
+
+	    img {
+	    	width: 40px;
+    	    height: 40px;
+    	    margin: auto 10px;
+	    }
+	}
+
+	.download-title {
+		color: $footer-text-color;
+		font-size: 1rem;
+		font-weight: 600;
+	}
+}

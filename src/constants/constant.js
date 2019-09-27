@@ -1,0 +1,1 @@
+export const domailUrl = 'http://localhost:3000';
